@@ -1,0 +1,45 @@
+{
+  "name": "css-reporter",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint:styles": "stylelint \"./src/**/*.css\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.2.3",
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "husky": "^4.3.8",
+    "postcss": "^8.2.4",
+    "postcss-csso": "^5.0.0",
+    "postcss-import": "^14.0.0",
+    "stylelint": "^13.9.0",
+    "stylelint-config-recess-order": "^2.3.0",
+    "stylelint-config-recommended": "^3.0.0",
+    "stylelint-order": "^4.1.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{js,css,md}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0"
+  }
+}
