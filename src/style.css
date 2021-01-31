@@ -6,3 +6,8 @@ body {
   display: grid;
   color: red;
 }
+
+span {
+  color: red;
+  display: grid;
+}
