@@ -2,12 +2,8 @@
   color: blue;
 }
 
-body {
-  display: grid;
-  color: red;
-}
-
 span {
+  font-size: 18px;
   color: red;
   display: grid;
 }
