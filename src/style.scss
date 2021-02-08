@@ -1,0 +1,19 @@
+::placeholder {
+  color: blue;
+}
+
+:root {
+  --color-primary: red;
+}
+
+span {
+  font-size: 18px;
+  color: var(--color-primary);
+    display: grid;
+}
+
+div {}
+
+span {}
+
+a {}
