@@ -13,9 +13,8 @@ span {
 }
 
 div {
-
+  color: var(--color-primary);
+  font-size: 18px;
+  display: grid;
 }
 
-a {  font-size: 18px;
-  color: var(--color-primary);
-  display: grid;}
