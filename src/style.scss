@@ -7,13 +7,19 @@
 }
 
 span {
+  display: grid;
   font-size: 18px;
   color: var(--color-primary);
-    display: grid;
 }
 
-div {}
+div {
+  font-size: 18px;
+  color: var(--color-primary);
+  display: grid;
+}
 
-span {}
+span {
+  color: green;
+}
 
 a {}
